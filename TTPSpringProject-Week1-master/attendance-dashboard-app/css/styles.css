@@ -1,0 +1,250 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --border-color: #e5e5e5;
+  --hover-bg: #f5f5f5;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --border-color: #333333;
+    --hover-bg: #1a1a1a;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ============================================================================
+   HEADER STYLES (pre-implemented)
+   ============================================================================ */
+
+header {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.header-middle {
+  flex: 1;
+}
+
+.header-user-section {
+  position: relative;
+}
+
+.header-user-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  transition: opacity 0.2s ease;
+}
+
+.header-user-button:hover {
+  opacity: 0.7;
+}
+
+.header-dropdown {
+  position: absolute;
+  right: 0;
+  margin-top: 0.5rem;
+  width: 12rem;
+  background: var(--background);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+  display: none;
+}
+
+.header-dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--foreground);
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  font-size: 1rem;
+}
+
+.header-dropdown-item:hover {
+  background-color: var(--hover-bg);
+}
+
+.header-dropdown-divider {
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* ============================================================================
+   LEADERBOARD STYLES (pre-implemented - container styles)
+   ============================================================================ */
+
+.leaderboard-wrapper {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.leaderboard-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+}
+
+.leaderboard-container h1 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 1.5rem;
+}
+
+.leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* ============================================================================
+   LEADERBOARD STYLES (STUDENT TODO)
+   Style the table header and cells
+   ============================================================================ */
+
+/* TODO: Style the table header row (the dark background with column titles)
+   Add: background-color with a dark color like #374151 */
+.leaderboard-table thead {
+    /* TODO: Add background-color */
+}
+
+/* TODO: Style the header cells (Username, Year, Major, Main Club, Events Attended)
+   Add these properties:
+   - padding: 14px 16px (space inside the cells)
+   - text-align: left (align text to the left)
+   - font-weight: 600 (make text semi-bold)
+   - color: white (white text on dark background)
+   - border-bottom: 3px solid #1f2937 (darker border at bottom) */
+.leaderboard-table th {
+    /* TODO: Style header cells */
+}
+
+/* TODO: Style the data cells (where the student information appears)
+   Add these properties:
+   - padding: 14px 16px (same as headers for alignment)
+   - border-bottom: 1px solid #e5e7eb (light gray line between rows)
+   - color: #374151 (text color) */
+.leaderboard-table td {
+    /* TODO: Style data cells */
+}
+
+/* TODO: Enable smooth transition for hover effect
+   Add: transition: background-color 0.2s ease */
+.leaderboard-table tbody tr {
+    /* TODO: Add transition */
+}
+
+/* TODO: Style the hover effect (background color when mouse is over a row)
+   Add: background-color with a light gray like #f3f4f6 */
+.leaderboard-table tbody tr:hover {
+    /* TODO: Add background-color on hover */
+}
+
+/* ============================================================================
+   PROFILE PAGE STYLES (pre-implemented - container and card styles)
+   ============================================================================ */
+
+.profile-page {
+    padding: 2rem;
+    min-height: 100vh;
+    background-color: #f3f4f6;
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.profile-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111827;
+}
+
+.profile-info-item {
+    padding: 1.25rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background: #fafafa;
+}
+
+.profile-info-label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.profile-info-value {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #111827;
+}
+
+/* ============================================================================
+   PROFILE PAGE STYLES (STUDENT TODO)
+   Create the grid layout
+   ============================================================================ */
+
+/* TODO: Create a grid layout for the profile info items
+   This should arrange the 5 info cards (Username, Year, Major, Main Club, Events Attended)
+   in a grid with 2 columns.
+   
+   Add these properties:
+   - display: What display would be good for a grid???
+   - grid-template-columns: repeat(2, 1fr) (create 2 equal columns)
+   - gap: 1.5rem (space between the cards) */
+
+.profile-info-grid {
+    /* TODO: What display would be good for a grid??? */
+}

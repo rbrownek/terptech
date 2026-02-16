@@ -1,0 +1,21 @@
+// Mock data for the application
+const mockLeaderboardData = [
+    { username: 'alexchen', year: 'Senior', major: 'Computer Science', main_club: 'CodeBlack', num_events_attended: 45 },
+    { username: 'jamiewilson', year: 'Junior', major: 'Electrical Engineering', main_club: 'Black Engineer Society', num_events_attended: 38 },
+    { username: 'sarahjohnson', year: 'Senior', major: 'Computer Engineering', main_club: 'ColorStack', num_events_attended: 42 },
+    { username: 'mikedavis', year: 'Sophomore', major: 'Information Science', main_club: 'CodeBlack', num_events_attended: 22 },
+    { username: 'emilybrown', year: 'Freshman', major: 'Math', main_club: 'Black Engineer Society', num_events_attended: 15 },
+    { username: 'jameslee', year: 'Senior', major: 'Mechanical Engineering', main_club: 'CodeBlack', num_events_attended: 35 },
+    { username: 'oliviagarcia', year: 'Junior', major: 'Computer Science', main_club: 'ColorStack', num_events_attended: 31 },
+    { username: 'davidmartinez', year: 'Sophomore', major: 'Civil Engineering', main_club: 'Black Engineer Society', num_events_attended: 18 },
+    { username: 'isabellarodriguez', year: 'Senior', major: 'Aerospace Engineering', main_club: 'CodeBlack', num_events_attended: 40 },
+    { username: 'chrissmith', year: 'Freshman', major: 'Computer Science', main_club: 'ColorStack', num_events_attended: 12 },
+    { username: 'amandawhite', year: 'Junior', major: 'Fire Protection Engineering', main_club: 'Black Engineer Society', num_events_attended: 28 },
+    { username: 'robertotaylor', year: 'Senior', major: 'Electrical Engineering', main_club: 'CodeBlack', num_events_attended: 37 },
+    { username: 'jenniferanderson', year: 'Sophomore', major: 'Information Science', main_club: 'ColorStack', num_events_attended: 20 },
+    { username: 'marcusthomas', year: 'Junior', major: 'Computer Engineering', main_club: 'Black Engineer Society', num_events_attended: 33 },
+    { username: 'victoriajackson', year: 'Freshman', major: 'Math', main_club: 'CodeBlack', num_events_attended: 10 },
+    { username: 'kevinmiller', year: 'Senior', major: 'Mechanical Engineering', main_club: 'ColorStack', num_events_attended: 29 },
+    { username: 'rashidawilliams', year: 'Sophomore', major: 'Computer Science', main_club: 'Black Engineer Society', num_events_attended: 25 },
+    { username: 'tianahaarris', year: 'Junior', major: 'Electrical Engineering', main_club: 'CodeBlack', num_events_attended: 34 },
+];

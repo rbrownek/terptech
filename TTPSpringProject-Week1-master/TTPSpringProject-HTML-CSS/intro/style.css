@@ -1,0 +1,19 @@
+p {
+    color: blue;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+p.redtext {
+    color: red;
+}
+
+#purpletext {
+    color:purple;
+}
+
+
+
+
