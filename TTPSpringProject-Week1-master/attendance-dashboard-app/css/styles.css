@@ -141,6 +141,7 @@ header {
    Add: background-color with a dark color like #374151 */
 .leaderboard-table thead {
     /* TODO: Add background-color */
+    background-color:#374151;
 }
 
 /* TODO: Style the header cells (Username, Year, Major, Main Club, Events Attended)
@@ -152,6 +153,11 @@ header {
    - border-bottom: 3px solid #1f2937 (darker border at bottom) */
 .leaderboard-table th {
     /* TODO: Style header cells */
+    padding:14px 16px;
+    text-align:left;
+    font-weight:600;
+    color:white;
+    border-bottom:3px solid #1f2937;
 }
 
 /* TODO: Style the data cells (where the student information appears)
@@ -161,18 +167,23 @@ header {
    - color: #374151 (text color) */
 .leaderboard-table td {
     /* TODO: Style data cells */
+    padding:14px 16px;
+    border-bottom:1px solid #e5e7eb;
+    color: #374151;
 }
 
 /* TODO: Enable smooth transition for hover effect
    Add: transition: background-color 0.2s ease */
 .leaderboard-table tbody tr {
     /* TODO: Add transition */
+    transition: background-color 0.2s ease;
 }
 
 /* TODO: Style the hover effect (background color when mouse is over a row)
    Add: background-color with a light gray like #f3f4f6 */
 .leaderboard-table tbody tr:hover {
     /* TODO: Add background-color on hover */
+    background:#f3f4f6;
 }
 
 /* ============================================================================
@@ -247,4 +258,8 @@ header {
 
 .profile-info-grid {
     /* TODO: What display would be good for a grid??? */
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:1.5rem
+
 }
